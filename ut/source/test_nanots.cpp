@@ -9,6 +9,8 @@
 #include <inttypes.h>
 #include "nanots.h"
 
+extern std::atomic<int> nanots_testing_failed_catalog_commits;
+
 #ifdef __linux__
 #include <signal.h>
 #include <sys/resource.h>
